@@ -17,9 +17,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.sql.DataSource;
 import java.util.Properties;
 
+
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories("web")
+//@PropertySource(value = {"classpath:db.properties"})
 @PropertySource(value = {"classpath:db.properties"})
 public class HibernateConfig {
 
